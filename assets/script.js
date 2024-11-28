@@ -36,3 +36,32 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+const deckContainer = document.querySelector('.container')
+
+function getMemberCard(member){
+  const {name, role, email, img} = member;
+
+  return `
+<div class="card">
+<img src="assets/${img}" alt="">
+<div id="anagrafica" >
+  <h3 id="name">${name}</h3>
+  <span id="role">${role}</span>
+  <span id="email">${email}</span></span>
+</div>
+</div>
+`
+}
+
+function getTeamCards(array){
+  let deck = ''
+  for(let member of array){
+    deck += getMemberCard(member)
+  }
+  deckContainer.innerHTML += deck
+}
+
+
+
+getTeamCards(teamMembers)
