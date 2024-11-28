@@ -71,10 +71,10 @@ form.addEventListener('submit', (e) => {
 
 e.preventDefault();
 
-const name = document.getElementById('input#name').value
-const role = document.getElementById('role').value
-const email = document.getElementById('email').value
-const img = document.getElementById('img').value
+const name = document.querySelector('input#name').value
+const role = document.querySelector('input#role').value
+const email = document.querySelector('input#email').value
+const img = document.querySelector('input#img').value
 
 console.log(name,role,email,img)
 
