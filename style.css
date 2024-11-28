@@ -14,6 +14,10 @@ h1 {
   color: blueviolet;
 }
 
+h2 {
+  margin-bottom: 50px;
+}
+
 /* UTILITIES */
 
 .container {
