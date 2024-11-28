@@ -1,0 +1,54 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Jaro", sans-serif;
+}
+
+body {
+  background-color: beige;
+}
+
+h1 {
+  text-align: center;
+  color: blueviolet;
+}
+
+/* UTILITIES */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  max-width: 1200px;
+  border-radius: 12px;
+  
+}
+
+.card{
+  display: flex;
+  color: white;
+  background-color: brown;
+  width:calc(100% / 3);
+  border: 1px solid black;
+  border-radius: 12px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  width: 130px;
+  height: 125px;
+  padding-right: 10px;
+}
+
+#anagrafica {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#email {
+  display: block;
+  margin-top: 5px;
+  color: #35BBF2;
+}
