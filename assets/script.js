@@ -55,6 +55,7 @@ function getMemberCard(member){
 }
 
 function getTeamCards(array){
+  deckContainer.innerHTML = '';
   let deck = ''
   for(let member of array){
     deck += getMemberCard(member)
@@ -62,6 +63,32 @@ function getTeamCards(array){
   deckContainer.innerHTML += deck
 }
 
-
-
 getTeamCards(teamMembers)
+
+const form = document.querySelector('form')
+console.log(form)
+form.addEventListener('submit', (e) => {
+
+e.preventDefault();
+
+const name = document.getElementById('input#name').value
+const role = document.getElementById('role').value
+const email = document.getElementById('email').value
+const img = document.getElementById('img').value
+
+console.log(name,role,email,img)
+
+const newMember = {
+  name,
+  role,
+  email,
+  img,
+}
+
+teamMembers.push(newMember)
+getTeamCards(teamMembers)
+
+})
+
+
+
