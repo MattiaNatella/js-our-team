@@ -9,15 +9,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
-
   <title>Our Team</title>
+
 </head>
 <body>
   <div class="container-top">
-    <h1 class="self-align-center">MEET OUR TEAM</h1>
+    <h1>MEET OUR TEAM</h1>
     <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex pariatur nemo error maiores aspernatur, dolorem aperiam quis repellat expedita. Non, iusto eum quas veritatis molestias incidunt placeat laboriosam tempora vitae.</h2>
   </div>
-    <div class="container">
+    <div class="container d-flex wrap space-between">
       <!-- <div class="card">
         <img src="assets/img/male1.png" alt="">
         <div id="anagrafica" >
@@ -26,11 +26,27 @@
           <span id="email">email</span>
         </div>
       </div> -->
-     
     </div>
 
+    <!-- FORM AGGIUNTA CARD -->   
+  <div id="form-container" class="container">
+    <form action="#">
+      <h1>JOIN OUR CREW</h1>
+      <label for="name">Name</label>
+      <input placeholder="Type your name" type="text" name="name" id="name">
+      <label for="role">Role</label>
+      <input placeholder="Type your role" type="text" name="name" id="role">
+      <label for="email">Email</label>
+      <input placeholder="Type your email" type="email" name="name" id="email">
+      <label for="img">Picture</label>
+      <input placeholder="Type image path" type="text" name="name" id="img">
+      <div id="buttons" class="d-flex">
+        <button type="button">Submit!</button>
+        <button type="reset">Cancel</button>
+      </div>
+    </form>
+  </div>
   </main>
-
 <!-- JAVASCRIPT -->
   <script src="assets/script.js"></script>
 </body>
